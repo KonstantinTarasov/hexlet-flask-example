@@ -19,3 +19,7 @@ def users_get():
 @app.post('/users')
 def users():
     return 'Users', 302
+
+@app.route("/courses/<id>")
+def courses_show(id):
+    return f"Course id: {id}"
